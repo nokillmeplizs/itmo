@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rain</title>
+    <style>
+        html { overflow:  hidden; }
+        body{background-image: url("img/2.jpg");
+            width: 1920px;
+            height: 1080px;
+        }
+        #link{
+            text-align: center;
+        }
+        a{
+
+            text-decoration: none;
+            color: white;
+            text-shadow: 1px 1px 1px gold;
+            font-family: 'Play', sans-serif;
+            font-size: 37px;
+
+        }
+        #music{
+            position: center;
+            margin-top: 40%;
+        }
+
+    </style>
+</head>
+<body>
+<div id="link">
+<a href="index.html">Назад</a>
+</div>
+<div id="music"  align="center">
+    <p><b>Instrumental_Piano_Academy_-_Rasslablenie_</b></p>
+    <audio autoplay controls id="player" src="music/Zvuki_-_dozhdya_(iPleer.fm).mp3"></audio>
+    <div>
+        <script> var audio = document.getElementById('player');
+        audio.volume = 0.7;
+        </script>
+
+        <button onclick="document.getElementById('player').play()" >Воспроизведение</button>
+        <button onclick="document.getElementById('player').pause()">Пауза</button>
+        <button onclick="document.getElementById('player').volume+=0.1">Громкость +</button>
+        <button onclick="document.getElementById('player').volume-=0.1">Громкость -</button>
+    </div>
+</div>
+</body>
+</html>

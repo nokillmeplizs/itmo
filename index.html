@@ -2,9 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="description" content="Сайт просто для отдыха, пока не придумана тема диплома">
+    <meta name="keywords" content="отдых, музыка, диплом, веб">
+    <title>Time is broken</title>
+    <style>
+       header{
+           text-align: center;
+           margin-bottom: 5px;
+           font-size: 20px;
+       }
+        #content1{background-image: url("img/1.jpg");
+            width: 1920px;
+            height: 1080px;
+        }
+        #music{
+            background-color: gainsboro;
+        }
+        a{
+            text-decoration: none;
+            color: lightslategrey;
+        }
+        .anav {
+            padding: 15px;
+            color: black;
+            text-shadow: 1px 1px 1px gold;
+        }
+        nav{
 
+            font-family: 'Play', sans-serif;
+            font-size: 47px;
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="lookup">
+        <a href="#lookdown">посмотреть вниз</a>
+    </header>
+
+
+
+<div id="content1">
+    <nav>
+        <a class="anav" href="rain.html">дождь</a>
+        <a class="anav" href="sea.html">море</a>
+        <a class="anav" href="forest.html">лес</a>
+        <a class="anav" href="about.html">о нас</a>
+    </nav>
+</div>
+    <div id="music"  align="center">
+        <p><b>Instrumental_Piano_Academy_-_Rasslablenie_</b></p>
+        <audio autoplay controls id="player" src="music/Instrumental_Piano_Academy_-_Rasslablenie_(iPleer.fm).mp3"></audio>
+        <div>
+            <script> var audio = document.getElementById('player');
+            audio.volume = 0.7;
+            </script>
+
+            <button onclick="document.getElementById('player').play()" >Воспроизведение</button>
+            <button onclick="document.getElementById('player').pause()">Пауза</button>
+            <button onclick="document.getElementById('player').volume+=0.1">Громкость +</button>
+            <button onclick="document.getElementById('player').volume-=0.1">Громкость -</button>
+        </div>
+    </div>
+
+
+    <footer id="lookdown">
+        <a href="#lookup">посмотреть вверх</a>
+    </footer>
 </body>
 </html>
